@@ -1,5 +1,9 @@
 "use strict";
 
+const player0El = document.querySelector(".player--0");
+const player1El = document.querySelector(".player--1");
+const playerActive = document.querySelector(".player--active");
+
 const score0El = document.querySelector("#score--0");
 const score1El = document.querySelector("#score--1");
 const diceEl = document.querySelector(".dice");
@@ -22,7 +26,10 @@ rollBtn.addEventListener("click", function () {
 
   if (dice !== 1) {
     currentScore += dice;
-    current1El.textContent = currentScore;
+    document.querySelector(`.current--${activePlayer}`).textContent =
+      currentScore;
   } else {
+    currentScore = 0;
+    document.querySelector(`.current--${activePlayer}`).textContent = 0;
   }
 });
