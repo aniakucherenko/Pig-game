@@ -1,3 +1,2 @@
-
-Follow my game 👇
+Follow my game 👉
 https://aniakucherenko.github.io/Pig-game/
